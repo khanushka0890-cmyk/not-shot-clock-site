@@ -1,0 +1,11 @@
+{
+  // Cloudflare Worker that serves notshotclock.pocketpoolapp.com as static files.
+  // Deployed automatically from the main branch (Workers Builds, Git integration).
+  "name": "not-shot-clock-site",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": ".",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "none"
+  }
+}
