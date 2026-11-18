@@ -9,6 +9,7 @@
 <link rel="apple-touch-icon" href="./assets/logo.png">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="/assets/sitefoot.css">
+<style>/* Same 1240px edges as the header and footer; text stays a readable width. */ .reading > * { max-width: 760px; width: 100%; box-sizing: border-box; }</style>
 <style>
   body{margin:0}
   a{color:#22D3EE;text-decoration:none}
@@ -21,7 +22,7 @@
 
   <!-- NAV -->
   <div style="width:100%; padding-block:18px; border-bottom:1px solid rgba(255,255,255,0.06); box-sizing:border-box;">
-    <div style="max-width:1040px; margin:0 auto; padding-inline:20px; width:100%; box-sizing:border-box; display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; position:relative;">
+    <div style="max-width:1240px; margin:0 auto; padding-inline:20px; width:100%; box-sizing:border-box; display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; position:relative;">
       <a href="/" aria-label="Back to Not Shot Clock home" style="position:absolute; left:env(safe-area-inset-left,0px); top:50%; transform:translateY(-50%); display:flex; align-items:center; justify-content:center; width:24px; height:34px; color:#9BA8B4; text-decoration:none;">
         <svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/></svg>
       </a>
@@ -34,7 +35,7 @@
 
   <!-- BODY -->
   <div style="width:100%; padding-block:60px; box-sizing:border-box; flex:1;">
-    <div style="max-width:1040px; margin:0 auto; padding-inline:20px; width:100%; box-sizing:border-box; display:flex; flex-direction:column; gap:22px;">
+    <div class="reading" style="max-width:1240px; margin:0 auto; padding-inline:20px; width:100%; box-sizing:border-box; display:flex; flex-direction:column; gap:22px;">
       <div>
         <h1 style="margin:0 0 8px; font-family:'Big Shoulders',sans-serif; font-weight:800; font-size:clamp(32px,5vw,48px); text-transform:uppercase;">Privacy Policy</h1>
         <span style="font-family:'Inter',sans-serif; font-size:13.5px; color:#9BA8B4;">Last updated: November 15, 2026</span>
