@@ -8,8 +8,10 @@
 <meta property="og:title" content="Not Shot Clock — the shot clock for pool nights">
 <meta property="og:description" content="Spin the dial, tap to start, hear the buzzer. Put it on the TV with AirPlay.">
 <meta property="og:image" content="https://notshotclock.pocketpoolapp.com/assets/img/tv-running.jpg">
-<link rel="icon" href="/assets/img/logo.png">
+<link rel="icon" href="./assets/logo.png">
+<link rel="apple-touch-icon" href="./assets/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="/assets/sitefoot.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders:wght@700;800&family=Inter:wght@400;500;600&display=swap">
 <style>
   :root {
@@ -23,7 +25,7 @@
   a { color: var(--accent); text-decoration: none; }
   a:hover { color: #67e3f5; }
   img { max-width: 100%; display: block; }
-  .wrap { max-width: 1120px; margin: 0 auto; padding-inline: max(24px, 4vw, env(safe-area-inset-left, 0px)); }
+  .wrap { max-width: 1240px; margin: 0 auto; padding-inline: max(20px, env(safe-area-inset-left, 0px)); }
   .band { padding-block: 72px; border-top: 1px solid var(--line); }
   .band.alt { background: var(--bg-alt); }
   .display { font-family: 'Big Shoulders', sans-serif; font-weight: 800; text-transform: uppercase; letter-spacing: -0.005em; text-wrap: balance; margin: 0; }
@@ -70,15 +72,23 @@
 <body>
 
 <!-- NAV -->
-<div style="padding-block:18px; border-bottom:1px solid var(--line);">
-  <div class="wrap" style="display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap;">
-    <a href="/" style="display:flex; align-items:center; gap:10px; color:inherit;">
-      <img src="/assets/img/logo.png" alt="" width="34" height="34" style="border-radius:22%;">
-      <span style="font-family:'Big Shoulders',sans-serif; font-weight:700; font-size:20px; text-transform:uppercase;">Not Shot Clock</span>
-    </a>
-    <a class="btn" href="https://apps.apple.com/app/id6815306099" style="padding:9px 18px; font-size:14px;">App Store</a>
+  <div style="width:100%; padding-block:18px; border-bottom:1px solid rgba(255,255,255,0.06); box-sizing:border-box;">
+    <div style="max-width:1000px; margin:0 auto; padding-inline:20px; width:100%; box-sizing:border-box; display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap;">
+      <div style="display:flex; align-items:center; gap:10px;">
+        <img src="./assets/logo.png" alt="Not Shot Clock" style="width:44px; height:44px; border-radius:22%; display:block;">
+        <span style="font-family:'Big Shoulders',sans-serif; font-weight:700; font-size:26px; letter-spacing:0.01em; text-transform:uppercase;">Not Shot Clock</span>
+      </div>
+      <div style="display:flex; align-items:center; gap:12px;">
+        <a href="/rules" style="display:inline-flex; align-items:center; gap:8px; height:40px; padding:0 15px; border-radius:999px; border:1px solid rgba(255,255,255,0.1); background:#0a0e13; color:#EAF2F5; font-family:'Inter',sans-serif; font-weight:600; font-size:14px; text-decoration:none; white-space:nowrap;">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="#22D3EE" aria-hidden="true"><path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/></svg>
+          Rules
+        </a>
+        <a href="https://apps.apple.com/app/id6815306099" style="display:block; line-height:0;">
+          <img src="./assets/app-store-badge.svg" alt="Download on the App Store" style="height:40px; width:auto; display:block;">
+        </a>
+      </div>
+    </div>
   </div>
-</div>
 
 <!-- HERO -->
 <div style="padding-block:76px 64px;">
@@ -88,9 +98,13 @@
       <h1 class="display" style="font-size:clamp(46px,6vw,74px); line-height:0.98;">The shot clock<br>for pool nights.</h1>
       <p class="lead">Spin the dial, tap to start, and let the glow and the buzzer do the arguing. On your phone, or up on the TV with AirPlay so the whole table can see it.</p>
       <div style="display:flex; align-items:center; gap:14px; flex-wrap:wrap;">
-        <a class="btn" href="https://apps.apple.com/app/id6815306099">Get it on the App Store</a>
+        <a href="https://apps.apple.com/app/id6815306099" style="display:block; line-height:0;"><img src="./assets/app-store-badge.svg" alt="Download on the App Store" style="height:54px; width:auto;"></a>
         <span class="price"><b>Free for 30 days</b> · then $2.99 once, no subscription</span>
       </div>
+        <a href="/rules" style="display:inline-flex; align-items:center; gap:8px; font-family:'Inter',sans-serif; font-weight:600; font-size:15px; color:#22D3EE;">
+          <svg width="17" height="17" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/></svg>
+          Read the Fast Pool rules
+        </a>
     </div>
     <div class="media">
       <div class="phone glow-green"><div class="scr"><img src="/assets/img/running.jpg" alt="Not Shot Clock timer running, green ring counting down from 8 seconds"></div></div>
@@ -216,17 +230,39 @@
   <div class="wrap" style="display:flex; flex-direction:column; align-items:center; gap:22px; text-align:center;">
     <h2 class="display" style="font-size:clamp(32px,5vw,52px); max-width:640px;">Rack 'em. Set the clock. Shoot.</h2>
     <p class="body" style="max-width:460px;">Try everything free for 30 days. After that, unlock it forever for $2.99 — one payment, no subscription.</p>
-    <a class="btn" href="https://apps.apple.com/app/id6815306099">Get Not Shot Clock</a>
+    <a href="https://apps.apple.com/app/id6815306099" style="display:block; line-height:0;"><img src="./assets/app-store-badge.svg" alt="Download on the App Store" style="height:54px; width:auto;"></a>
   </div>
 </div>
 
-<!-- LEGAL FOOTER -->
-<div style="padding-block:26px; border-top:1px solid var(--line);">
-  <div class="wrap" style="display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px; font-size:12.5px; color:var(--muted);">
-    <span>Not Shot Clock is developed by The Bay City Company Limited.</span>
-    <span style="display:flex; gap:18px;"><a href="/privacy">Privacy Policy</a><a href="/support">Support</a><a href="https://pocketpoolapp.com/">Pocket Pool App</a></span>
-  </div>
-</div>
+<!-- SITE MAP FOOTER (shared with pocketpoolapp.com and killer.pocketpoolapp.com) -->
+  <footer class="sitefoot">
+    <div class="sitefoot__in">
+      <div class="sitefoot__brand">
+        <a class="sitefoot__home" href="https://pocketpoolapp.com/">Pocket Pool</a>
+        <p>Small iPhone apps for pool nights.</p>
+        <span class="sitefoot__links"><a href="https://pocketpoolapp.com/">All apps</a><a href="mailto:killerpoolapp@gmail.com">Contact</a></span>
+        <p class="sitefoot__legal">© 2026 The Bay City Company Limited</p>
+      </div>
+      <nav class="sitefoot__col" aria-label="Killer Pool">
+        <h2>Killer Pool</h2>
+        <a href="https://killer.pocketpoolapp.com/home">Home</a>
+        <a href="https://killer.pocketpoolapp.com/rules">Rules</a>
+        <a href="https://killer.pocketpoolapp.com/home#live">Follow a live game</a>
+        <a href="https://killer.pocketpoolapp.com/rules#sheet">Score sheet</a>
+        <a href="https://killer.pocketpoolapp.com/support">Support</a>
+        <a href="https://killer.pocketpoolapp.com/privacy">Privacy</a>
+        <a href="https://apps.apple.com/app/apple-store/id6802345932?pt=128809266&amp;ct=nsc-footer&amp;mt=8">App Store</a>
+      </nav>
+      <nav class="sitefoot__col" aria-label="Not Shot Clock">
+        <h2>Not Shot Clock</h2>
+        <a href="/" aria-current="page">Home</a>
+        <a href="/rules">Fast Pool Rules</a>
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+        <a href="https://apps.apple.com/app/apple-store/id6815306099?pt=128809266&amp;ct=nsc-footer&amp;mt=8">App Store</a>
+      </nav>
+    </div>
+  </footer>
 
 <!-- Cloudflare Web Analytics: no cookies, no personal data (see privacy.html). --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "66d4319e4a10494c87d75a92358eb5a8"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
