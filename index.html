@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <title>Not Shot Clock — the shot clock for pool nights</title>
-<meta name="description" content="A fast, no-nonsense shot clock for pool, billiards and snooker. Spin the dial, tap to start, hear the buzzer — and put it on the TV with AirPlay. Free for 30 days.">
+<meta name="description" content="A fast, no-nonsense shot clock for pool, billiards and snooker. Spin the dial, tap to start, hear the buzzer — and put it on the TV. iPhone and Android. Free for 30 days.">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta property="og:title" content="Not Shot Clock — the shot clock for pool nights">
-<meta property="og:description" content="Spin the dial, tap to start, hear the buzzer. Put it on the TV with AirPlay.">
+<meta property="og:description" content="Spin the dial, tap to start, hear the buzzer. Put it on the TV. iPhone and Android.">
 <meta property="og:image" content="https://notshotclock.pocketpoolapp.com/assets/img/tv-running.jpg">
 <link rel="icon" href="./assets/logo.png">
 <link rel="apple-touch-icon" href="./assets/logo.png">
@@ -61,6 +61,7 @@
   .steps li { counter-increment: s; display: flex; gap: 14px; align-items: flex-start; font-size: 15px; line-height: 1.5; }
   .steps li::before { content: counter(s); flex: none; width: 28px; height: 28px; border-radius: 50%; background: var(--accent); color: var(--on-accent); font-weight: 700; font-size: 14px; display: flex; align-items: center; justify-content: center; }
   .price { display: inline-flex; gap: 10px; align-items: center; flex-wrap: wrap; font-size: 14px; color: var(--muted); }
+  .tv-os { margin: 4px 0 -6px; font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text); }
   .price b { color: var(--text); font-weight: 600; }
   @media (max-width: 560px) {
     .band { padding-block: 56px; }
@@ -86,6 +87,7 @@
         <a href="https://apps.apple.com/app/id6815306099" style="display:block; line-height:0;">
           <img src="./assets/app-store-badge.svg" alt="Download on the App Store" style="height:40px; width:auto; display:block;">
         </a>
+        <a href="https://play.google.com/store/apps/details?id=com.thebaycitycompanylimited.shotclock" style="display:block; line-height:0;"><img src="./assets/google-play-badge.png" alt="Get it on Google Play" style="height:40px; width:auto; display:block;"></a>
       </div>
     </div>
   </div>
@@ -96,9 +98,10 @@
     <div class="copy" style="gap:22px;">
       <span class="eyebrow">Pool · Billiards · Snooker</span>
       <h1 class="display" style="font-size:clamp(46px,6vw,74px); line-height:0.98;">The shot clock<br>for pool nights.</h1>
-      <p class="lead">Spin the dial, tap to start, and let the glow and the buzzer do the arguing. On your phone, or up on the TV with AirPlay so the whole table can see it.</p>
+      <p class="lead">Spin the dial, tap to start, and let the glow and the buzzer do the arguing. On your iPhone or Android phone, or up on the TV so the whole table can see it.</p>
       <div style="display:flex; align-items:center; gap:14px; flex-wrap:wrap;">
         <a href="https://apps.apple.com/app/id6815306099" style="display:block; line-height:0;"><img src="./assets/app-store-badge.svg" alt="Download on the App Store" style="height:54px; width:auto;"></a>
+        <a href="https://play.google.com/store/apps/details?id=com.thebaycitycompanylimited.shotclock" style="display:block; line-height:0;"><img src="./assets/google-play-badge.png" alt="Get it on Google Play" style="height:54px; width:auto; display:block;"></a>
         <span class="price"><b>Free for 30 days</b> · then $2.99 once, no subscription</span>
       </div>
         <a href="/rules" style="display:inline-flex; align-items:center; gap:8px; font-family:'Inter',sans-serif; font-weight:600; font-size:15px; color:#22D3EE;">
@@ -184,20 +187,26 @@
   <div class="wrap row">
     <div class="media" style="flex:1 1 420px; align-items:center;">
       <div class="tv">
-        <div class="panel"><img src="/assets/img/tv-extended.jpg" alt="The TV layout over AirPlay: the dial on the left, the last five shots on the right, and an Extended +3 badge" style="width:100%; aspect-ratio:16/9; object-fit:cover;"></div>
+        <div class="panel"><img src="/assets/img/tv-extended.jpg" alt="The TV layout: the dial on the left, the last five shots on the right, and an Extended +3 badge" style="width:100%; aspect-ratio:16/9; object-fit:cover;"></div>
         <div class="neck"></div><div class="foot"></div>
       </div>
     </div>
     <div class="copy" style="--dot: var(--accent);">
-      <span class="eyebrow">AirPlay</span>
+      <span class="eyebrow">On the TV</span>
       <h2 class="display" style="font-size:clamp(28px,3.6vw,40px);">Put it on the TV.</h2>
-      <p class="body">Mirror your iPhone to an Apple TV or any AirPlay TV and the app switches the screen to a layout built for the room: a big dial, the last five shots, and an Extended badge when a shot gets extra time. Your phone keeps the controls.</p>
+      <p class="body">Mirror your phone to the TV and the app switches the screen to a layout built for the room: a big dial, the last five shots, and an Extended badge when a shot gets extra time. Your phone keeps the controls.</p>
+      <h3 class="tv-os">iPhone · AirPlay</h3>
       <ol class="steps">
         <li>Connect your iPhone and TV to the same Wi-Fi network.</li>
         <li>Swipe down from the top-right corner to open Control Center.</li>
-        <li>Tap Screen Mirroring and pick your TV.</li>
-        <li>The TV switches to the full-screen clock automatically.</li>
+        <li>Tap Screen Mirroring and pick your Apple TV or AirPlay TV.</li>
       </ol>
+      <h3 class="tv-os">Android · Cast screen or cable</h3>
+      <ol class="steps">
+        <li>Connect your phone and TV to the same Wi-Fi network.</li>
+        <li>Swipe down twice from the top and tap Cast, Screen Cast or Smart View, then pick your TV. Or plug in a USB-C to HDMI cable.</li>
+      </ol>
+      <p class="body" style="font-size:15px;">Either way, the TV switches to the full-screen clock automatically.</p>
       <ul class="dots">
         <li>Runs off the same clock as your phone — no lag</li>
         <li>Sound plays through the TV</li>
@@ -231,6 +240,7 @@
     <h2 class="display" style="font-size:clamp(32px,5vw,52px); max-width:640px;">Rack 'em. Set the clock. Shoot.</h2>
     <p class="body" style="max-width:460px;">Try everything free for 30 days. After that, unlock it forever for $2.99 — one payment, no subscription.</p>
     <a href="https://apps.apple.com/app/id6815306099" style="display:block; line-height:0;"><img src="./assets/app-store-badge.svg" alt="Download on the App Store" style="height:54px; width:auto;"></a>
+        <a href="https://play.google.com/store/apps/details?id=com.thebaycitycompanylimited.shotclock" style="display:block; line-height:0;"><img src="./assets/google-play-badge.png" alt="Get it on Google Play" style="height:54px; width:auto; display:block;"></a>
   </div>
 </div>
 
@@ -239,7 +249,7 @@
     <div class="sitefoot__in">
       <div class="sitefoot__brand">
         <a class="sitefoot__home" href="https://pocketpoolapp.com/">Pocket Pool</a>
-        <p>Small iPhone apps for pool nights.</p>
+        <p>Small apps for pool nights.</p>
         <span class="sitefoot__links"><a href="https://pocketpoolapp.com/">All apps</a><a href="mailto:killerpoolapp@gmail.com">Contact</a></span>
         <p class="sitefoot__legal">© 2026 The Bay City Company Limited</p>
       </div>
@@ -260,6 +270,7 @@
         <a href="/support">Support</a>
         <a href="/privacy">Privacy</a>
         <a href="https://apps.apple.com/app/apple-store/id6815306099?pt=128809266&amp;ct=nsc-footer&amp;mt=8">App Store</a>
+        <a href="https://play.google.com/store/apps/details?id=com.thebaycitycompanylimited.shotclock">Google Play</a>
       </nav>
     </div>
   </footer>
